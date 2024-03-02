@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "watch": "sass --watch ./scss/index.scss ./css/main.css"
+        "watch-landing": "sass --watch ./landing-page/scss/index.scss ./landing-page/css/main.css"
     },
     "keywords": [],
     "author": "",
