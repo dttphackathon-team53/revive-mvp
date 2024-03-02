@@ -7,6 +7,7 @@
 body {
     font-family: $ff-sans-serif;
     background-color: $body-bg-color;
+    line-height: 1.25;
 }
 
 .container {
@@ -16,5 +17,37 @@ body {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 3rem;
+    line-height: 1;
+    color: $heading-primary;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: $white;
+    transition: color 350ms ease;
+    &:hover {
+        color: $accent-color;
+    }
+}
+
+.list-unstyled {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.btn-default {
+    font-size: 0.75rem;
+    cursor: pointer;
+    background-color: $accent-color;
+    border: none;
+    padding-block: 1.25rem;
+    padding-inline: 5.25rem;
+    font-weight: 700;
+    border-radius: 12px;
 }
