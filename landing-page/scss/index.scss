@@ -1,2 +1,8 @@
 @use "./reset" as *;
 @use "./base" as *;
+
+// Page Sections
+
+@use "./page-sections/header";
+@use "./page-sections/hero";
+@use "./page-sections/about-section";

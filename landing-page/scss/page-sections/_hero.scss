@@ -1,0 +1,62 @@
+@use "../variables" as *;
+
+.hero {
+    padding-top: 10vh;
+    background-image: url("/landing-page/assets/images/cloud-image.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.hero-text {
+    color: $heading-primary;
+    h1,
+    p {
+        width: 70%;
+        line-height: 1.4;
+        margin-block: 1.8rem;
+    }
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+}
+
+.hero-image {
+    position: relative;
+
+    img {
+        z-index: -1;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+    }
+
+    &:after {
+        top: 5rem;
+        left: 4.5rem;
+        right: 4.5rem;
+        bottom: 5rem;
+        background-image: linear-gradient(to bottom, $blue-green, $gray);
+
+        z-index: -3;
+        box-shadow: 0px 0px 18px 12px white;
+    }
+    &:before {
+        top: 7rem;
+        left: 6.5rem;
+        right: 6.5rem;
+        bottom: 7rem;
+        background-image: linear-gradient(to bottom, #f6f877, #cbcbb9);
+        z-index: -2;
+        box-shadow: 0px 0px 18px 12px white;
+    }
+}
