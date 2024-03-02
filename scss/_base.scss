@@ -1,0 +1,20 @@
+@use "./variables" as *;
+
+:root {
+    font-size: 1rem;
+}
+
+body {
+    font-family: $ff-sans-serif;
+    background-color: $body-bg-color;
+}
+
+.container {
+    width: 88%;
+    max-width: 1528px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2em;
+}
