@@ -10,21 +10,21 @@
         <header id="main-header">
             <div class="container">
                 <a class="logo" href="."
-                    ><img src="./assets/images/Logo.png" alt=""
+                    ><img src="./assets/images/logo.svg" alt=""
                 /></a>
-                <nav>
+                <nav class="main-nav">
                     <ul class="list-unstyled">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Features</a></li>
-                        <li><a href="">Plan</a></li>
+                        <li><a href="#home-section">Home</a></li>
+                        <li><a href="#about-section">About Us</a></li>
+                        <li><a href="#features-section">Features</a></li>
+                        <li><a href="#plan-section">Plan</a></li>
                     </ul>
                     <ul class="list-unstyled">
                         <li>
-                            <a class="btn-clear btn-default" href="">Login</a>
+                            <a class="btn-clear btn-default" href="#">Login</a>
                         </li>
                         <li>
-                            <a class="btn-accent btn-default" href=""
+                            <a class="btn-accent btn-default" href="#plans"
                                 >Sign up</a
                             >
                         </li>
@@ -32,7 +32,7 @@
                 </nav>
             </div>
         </header>
-        <section class="hero">
+        <section id="home-section" class="hero">
             <div class="container">
                 <div class="hero-text">
                     <h1>Your One Stop App For All Things Health Related!</h1>
@@ -40,7 +40,12 @@
                         For a complete 360 transformation to your health, join
                         us.
                     </p>
-                    <button class="btn-default btn-accent">Sign Up</button>
+                    <a
+                        href="#plans"
+                        class="btn-default btn-accent btn-inline-size"
+                    >
+                        Sign Up
+                    </a>
                 </div>
                 <div class="hero-image">
                     <img src="./assets/images/hero-image.png" />
@@ -81,7 +86,9 @@
                         users to experience the best of both worlds in managing
                         their health and fitness goals.”
                     </p>
-                    <button class="btn-default btn-clear btn-clear-dark">
+                    <button
+                        class="btn-default btn-clear btn-clear-dark btn-inline-size"
+                    >
                         Learn More
                     </button>
                 </div>
@@ -108,7 +115,7 @@
             </div>
         </section>
 
-        <section class="features-section">
+        <section id="features-section" class="features-section">
             <div class="container container-sm">
                 <h2>Features</h2>
                 <ul class="list-unstyled feature-list">
@@ -261,6 +268,101 @@
                 </ul>
             </div>
         </section>
+        <section id="plan-section" class="plans-section">
+            <div class="container">
+                <h2>Plans</h2>
+                <div class="plan-card plan-card-light">
+                    <div class="plan-type">
+                        <h3>Basic</h3>
+                        <p>Free</p>
+                    </div>
+                    <ul class="plan-details">
+                        <li>Personalized workout plans</li>
+                        <li>Meal planning and dietary guidelines</li>
+                        <li>
+                            Activity tracker for workot, sleep and nutrition
+                        </li>
+                        <li>Fitness schedule/calendar</li>
+                    </ul>
+                    <a
+                        class="btn-default btn-subscribe btn-subscribe-dark"
+                        href="#"
+                        >Get started</a
+                    >
+                </div>
+                <div class="plan-card plan-card-dark">
+                    <img src="./assets/images/price-crown-icon.png" alt="" />
+                    <div class="plan-type">
+                        <h3>Premium</h3>
+                        <span>$29.99/month</span>
+                    </div>
+                    <ul class="plan-details">
+                        <li>Specialized workout plans from fitness experts</li>
+                        <li>Advanced meal planning guides</li>
+                        <li>
+                            Activity tracker for workout, sleep, and nutrition
+                        </li>
+                        <li>Fitness schedule/calendar</li>
+                        <li>Access to fitness coaching experts</li>
+                    </ul>
+                    <a
+                        class="btn-default btn-subscribe btn-subscribe-light"
+                        href="#"
+                        >Sign up</a
+                    >
+                </div>
+                <div class="plan-card plan-card-light">
+                    <img src="./assets/images/premium-icon.png" alt="" />
+                    <div class="plan-type">
+                        <h3>Premium</h3>
+                        <span>$200/Annum</span>
+                    </div>
+                    <ul class="plan-details">
+                        <li>Specialized workout plans from fitness experts</li>
+                        <li>Advanced meal planning guides</li>
+                        <li>
+                            Activity tracker for workout, sleep, and nutrition
+                        </li>
+                        <li>Fitness schedule/calenda</li>
+                        <li>Access to fitness coaching experts</li>
+                    </ul>
+                    <a
+                        class="btn-default btn-subscribe btn-subscribe-dark"
+                        href="#"
+                        >Sign Up</a
+                    >
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <nav class="footer-nav">
+                    <ul class="list-unstyled site-map">
+                        <li><a href="#about-section">About Us</a></li>
+                        <li><a href="#features-section">Features</a></li>
+                        <li><a href="#plan-section">Plan</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </nav>
+                <h2>Connect With Us</h2>
+                <ul class="list-unstyled socials">
+                    <li>
+                        <a href="#"
+                            ><img src="./assets/images/Facebook.svg"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./assets/images/X.svg" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./assets/images/Google.png" /></a>
+                    </li>
+                </ul>
+                <p class="copyright">Copyright 2024 All Rights Reserved</p>
+            </div>
+        </footer>
         <script src="./assets/js/intersection.js"></script>
     </body>
 </html>
