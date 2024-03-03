@@ -1,0 +1,13 @@
+@use "../variables" as *;
+
+.partners {
+    transform: translateY(-50%);
+}
+
+.partners-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(18px);
+}
