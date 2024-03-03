@@ -2,6 +2,7 @@
 
 :root {
     font-size: 1rem;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -51,15 +52,20 @@ a {
 
 .btn-default {
     font-size: 0.75rem;
+    display: block;
     cursor: pointer;
     border: none;
     padding-block: 1.25rem;
-    padding-inline: 5.25rem;
+    text-align: center;
     font-weight: 700;
-    border-radius: 12px;
+    border-radius: $radius;
     font-size: 1.2rem;
-    display: inline-block;
     transition: all 250ms ease;
+}
+
+.btn-inline-size {
+    padding-inline: 4.3rem;
+    display: inline-block;
 }
 
 .btn-accent {
@@ -74,8 +80,43 @@ a {
 .btn-clear {
     background-color: transparent;
     border: 1px solid;
+    &:hover {
+        background-color: $dark;
+        color: $white;
+        border-color: transparent;
+    }
 }
 
 .btn-clear-dark {
     color: $blue-green;
+}
+
+.btn-subscribe {
+    font-size: 0.875rem;
+    padding-block: 0.75rem;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-subscribe-dark {
+    color: $white;
+    background-color: $dark-green;
+    border: 1px solid transparent;
+
+    &:hover {
+        background-color: $white;
+        color: $dark-green;
+        border-color: $dark-green;
+    }
+}
+
+.btn-subscribe-light {
+    color: $dark-green;
+    background-color: white;
+    border: 1px solid;
+    &:hover {
+        color: $white;
+        background-color: $dark-green;
+    }
 }
