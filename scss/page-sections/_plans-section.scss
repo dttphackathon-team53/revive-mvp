@@ -1,0 +1,78 @@
+@use "../variables" as *;
+
+.plans-section {
+    margin-top: 4.5rem;
+    text-align: center;
+
+    h2 {
+        font-weight: 500;
+        margin-block: 2.5rem;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        h2 {
+            flex-basis: 100%;
+        }
+
+        h2,
+        .plan-card {
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+
+        .plan-card {
+            flex-basis: 30%;
+            .plan-details {
+                margin-bottom: 1.8rem;
+                line-height: 2.25;
+            }
+            &:first-of-type {
+                .plan-details {
+                    margin-bottom: 10rem;
+                    // dark list margin + light list margin + line height
+                }
+            }
+        }
+    }
+}
+
+.plan-card {
+    text-align: left;
+    border: 1px solid;
+    border-radius: $radius;
+
+    padding: 2.875rem 1.5rem;
+    h3 {
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    h3,
+    p,
+    li {
+        margin-bottom: 0.625rem;
+    }
+}
+
+.plan-type {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-block: 1.8rem;
+
+    &:first-of-type {
+        margin-top: 0;
+    }
+}
+
+.plan-card-dark {
+    background-color: $dark-green;
+    color: $white;
+}
+
+.plan-card-light {
+    background-color: $white;
+}

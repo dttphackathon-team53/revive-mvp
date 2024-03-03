@@ -1,12 +1,13 @@
 @use "../variables" as *;
 
 header {
-    padding-block: 0.8rem;
+    padding-block: 2.5rem;
     z-index: 8;
 
     position: fixed;
     width: 100%;
     transition: background-color 250ms ease;
+    // background-color: $blue-green;
 
     .container {
         display: flex;
@@ -18,21 +19,27 @@ header {
     }
 }
 
-.logo img {
-    width: 80px;
-}
-
-nav {
+.main-nav {
     display: flex;
-
+    flex-grow: 1;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-evenly;
     ul {
         display: flex;
+        flex-grow: 1;
+        flex-shrink: 0;
         &:first-of-type {
-            margin-block: auto;
+            // margin-block: auto;
+            gap: 2.8rem;
         }
 
-        li {
-            margin-left: 2rem;
+        &:last-of-type {
+            gap: 1.25rem;
+            li {
+                flex-grow: 1;
+                flex-shrink: 0;
+            }
         }
     }
 }
