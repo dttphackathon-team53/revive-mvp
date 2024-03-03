@@ -6,8 +6,8 @@
 
 body {
     font-family: $ff-sans-serif;
-    background-color: $body-bg-color;
     line-height: 1.25;
+    color: $dark;
 }
 
 .container {
@@ -16,20 +16,28 @@ body {
     margin: 0 auto;
 }
 
+.container-sm {
+    max-width: 1270px;
+}
+
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     line-height: 1;
-    color: $heading-primary;
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
+
+h3 {
+    font-size: 2rem;
+}
+
 a {
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-decoration: none;
     color: $white;
-    transition: color 350ms ease;
+    transition: all 250ms ease;
     &:hover {
         color: $accent-color;
     }
@@ -44,10 +52,30 @@ a {
 .btn-default {
     font-size: 0.75rem;
     cursor: pointer;
-    background-color: $accent-color;
     border: none;
     padding-block: 1.25rem;
     padding-inline: 5.25rem;
     font-weight: 700;
     border-radius: 12px;
+    font-size: 1.2rem;
+    display: inline-block;
+    transition: all 250ms ease;
+}
+
+.btn-accent {
+    background-color: $accent-color;
+    color: $dark;
+    &:hover {
+        color: $accent-color;
+        background-color: $dark;
+    }
+}
+
+.btn-clear {
+    background-color: transparent;
+    border: 1px solid;
+}
+
+.btn-clear-dark {
+    color: $blue-green;
 }
